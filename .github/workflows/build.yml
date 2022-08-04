@@ -1,0 +1,20 @@
+on:
+  pull_request:
+    branches:
+      - master
+name: 🚀 Build and Check code
+jobs:
+  check:
+    name: 💎 Check code quality
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2.3.4
+    - name: 📦 Get dependencies
+      run: npm install
+    - name: 🔨 Build Project
+      run: npm run build
+    - name: 🧹 Eslint execution
+      run: npm run lint:fix
+    - name: 📐 Build Project
+      run: npm run lint:format

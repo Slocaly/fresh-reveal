@@ -1,0 +1,32 @@
+.debuild-container {
+  .openai  {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 2px #000000;
+  }
+
+  .debuild-content {
+    .details {
+      padding-top: 1rem;
+      display: inline-flex;
+      align-items: center;
+
+      img {
+        width: 200px;
+        filter: drop-shadow(0 0 0.5rem black);
+      }
+
+      p {
+        color: deepskyblue;
+        font-size: 10rem;
+        font-weight: bold;
+        margin: 0 3rem;
+      }
+    }
+  }
+
+  video {
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 2px #000000;
+  }
+}

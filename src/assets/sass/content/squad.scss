@@ -1,0 +1,21 @@
+.squad {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4.5rem;
+  }
+
+  .squad-teuteu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 6rem;
+
+    img:nth-child(even) {
+      position: relative;
+      left: -6rem;
+    }
+  }
+}
